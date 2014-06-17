@@ -1,6 +1,8 @@
 package com.example.RobolectricEspresso;
 
 import android.app.Activity;
+import android.widget.Button;
+import android.widget.TextView;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,6 +24,17 @@ public class HelloWorldActivityTest {
     @Test
     public void testActivityNameIsHelloWorld() throws Exception {
         assertThat(activity.getTitle().toString(), equalTo("RobolectricEspresso"));
+    }
+
+    @Test
+    public void testWhenButtonIsClickedThenTextGetsChanged() throws Exception {
+        final TextView textView = (TextView) activity.findViewById(R.id.text);
+        final Button button = (Button) activity.findViewById(R.id.button);
+
+        button.performClick();
+
+        //noinspection ConstantConditions
+        assertThat(textView.getText().toString(), equalTo("ButtonClicked"));
     }
 
     @After
