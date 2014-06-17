@@ -22,7 +22,7 @@ public class HelloWorldActivityTest {
     }
 
     @Test
-    public void testActivityNameIsHelloWorld() throws Exception {
+    public void testActivityNameIsRobolectricEspresso() throws Exception {
         assertThat(activity.getTitle().toString(), equalTo("RobolectricEspresso"));
     }
 

@@ -1,0 +1,44 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:${androidGradlePluginVersion}"
+    }
+}
+
+apply plugin: 'android'
+
+android {
+    packagingOptions {
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+    compileSdkVersion 19
+    buildToolsVersion "19.0.3"
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // Android (should be after everything else)
+    compile 'com.android.support:appcompat-v7:19.0.1'
+    compile 'com.android.support:support-v4:19.0.1'
+}
+
+apply plugin: 'idea'
+idea {
+    module {
+        testOutputDir = file('build/test-classes/debug')
+    }
+}

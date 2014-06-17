@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RoboSpock</string>
+    <string name="buttonClicked">ButtonClicked</string>
+</resources>
