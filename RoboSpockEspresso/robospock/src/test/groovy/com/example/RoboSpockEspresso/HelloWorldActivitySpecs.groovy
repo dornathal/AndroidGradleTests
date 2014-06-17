@@ -1,6 +1,5 @@
 package com.example.RoboSpockEspresso
 
-import com.example.RobolectricEspresso.R
 import org.robolectric.Robolectric
 import pl.polidea.robospock.RoboSpecification
 
