@@ -19,6 +19,6 @@ public class HelloWorldActivity extends Activity {
     }
 
     public void onButtonClick(View view) {
-        text.setText(getString(R.string.buttonClicked));
+        //text.setText(getString(R.string.buttonClicked));
     }
 }
