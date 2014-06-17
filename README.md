@@ -5,10 +5,6 @@ Variations of gradle builds that setup unit and/or instrumentation tests
 
 This repository showcases some setups of how different frameworks can be implemented in a gradle build configuration to test android applications.
 
-Versions used:
-- gradle: 1.12
-- android-gradle-plugin: 0.10.+
-
 Testing frameworks
 ------------------
 ###[Robolectric](http://robolectric.org/)
