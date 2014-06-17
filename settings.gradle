@@ -1,2 +1,1 @@
-include ':RoboSpock'
-include (":RobolectricEspresso")
+include ":RobolectricEspresso"
