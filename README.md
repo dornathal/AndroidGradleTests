@@ -1,6 +1,6 @@
 AndroidGradleTests
 ==================
-
+[![Build Status](https://travis-ci.org/Dornathal/AndroidGradleTests.svg?branch=master)](https://travis-ci.org/Dornathal/AndroidGradleTests)
 Variations of gradle builds that setup unit and/or instrumentation tests
 
 This repository showcases some setups of how different frameworks can be implemented in a gradle build configuration to test android applications.
