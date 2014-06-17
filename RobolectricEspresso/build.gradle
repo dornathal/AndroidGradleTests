@@ -34,12 +34,6 @@ android {
         testInstrumentationRunner "com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
     }
 
-/*    buildTypes {
-        debug {
-            debuggable true
-            packageNameSuffix ".debug"
-        }
-    }*/
 }
 
 androidTest {

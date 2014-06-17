@@ -1,4 +1,4 @@
-package com.example.RoboSpock
+package com.example.RoboSpockEspresso
 
 import com.example.RobolectricEspresso.R
 import org.robolectric.Robolectric

@@ -1,0 +1,26 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:${androidGradlePluginVersion}"
+        classpath 'org.robospock:robospock-plugin:0.4.0'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'groovy'
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:1.8.6"
+    compile 'org.robospock:robospock:0.4'
+}
+
+project.ext {
+    robospock = ":RoboSpock-app"
+}
+
+apply plugin: 'robospock'

@@ -10,7 +10,7 @@ dependencies {
     compile 'cglib:cglib-nodep:3.1'
 
     compile 'com.jakewharton:butterknife:4.0.1'
-    compile project(":RoboSpock:app")
+    compile project(":RoboSpockEspresso:app")
 }
 
 sourceSets.main.java.srcDirs += ['../app/src/main/java', '../app/build/source/r/debug']
@@ -32,4 +32,4 @@ test {
     workingDir = '../app/src/main'
 }
 
-tasks["test"].dependsOn project(":RoboSpock:app").tasks["compileDebugJava"]
+tasks["test"].dependsOn project(":RoboSpockEspresso:app").tasks["compileDebugJava"]
