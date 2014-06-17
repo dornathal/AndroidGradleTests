@@ -1,10 +1,9 @@
-package com.example.RoboSpock;
+package com.example.RoboSpockEspresso;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import com.example.RobolectricEspresso.R;
 
 public class HelloWorldActivity extends Activity {
     TextView text;

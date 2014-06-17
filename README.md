@@ -10,14 +10,24 @@ Testing frameworks
 ###[Robolectric](http://robolectric.org/)
 - Testing: [TDD](http://en.wikipedia.org/wiki/Test-driven_development), JUnit4
 - Advantages:
-  - Tests are executed on local machine 
-  - Runs without Emulator or RealDevice
+    - Tests are executed on local machine 
+    - Runs without Emulator or RealDevice
 - Used in [RobolectricEspresso](https://github.com/Dornathal/AndroidGradleTests/tree/master/RobolectricEspresso) 
+
+###[RoboSpock](http://robospock.org/)
+- glues Robolectric and Spock together
+- Testing: [TDD](http://en.wikipedia.org/wiki/Test-driven_development), JUnit4
+- Advantages:
+    - As tests are run with Robolectric it runs equally fast
+    - Failing tests provide better information due to Spock
+     
+- Used in [RoboSpockEspresso](https://github.com/Dornathal/AndroidGradleTests/tree/master/RoboSpockEspresso) 
 
 ###[Espresso](https://code.google.com/p/android-test-kit/)
 - Testing: [Integration](http://en.wikipedia.org/wiki/Integration_testing)
 - Advantages: 
- - Good readability of produced tests
+    - Good readability of produced tests
 - Disadvatages:
- - currently not in a central repository -> has to be included manualy in libs
+    - currently not in a central repository -> has to be included manualy in libs
 - Used in [RobolectricEspresso](https://github.com/Dornathal/AndroidGradleTests/tree/master/RobolectricEspresso)
+[RoboSpockEspresso](https://github.com/Dornathal/AndroidGradleTests/tree/master/RoboSpockEspresso) 

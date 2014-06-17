@@ -1,2 +1,2 @@
 include ":RobolectricEspresso"
-include ":RoboSpock", ":RoboSpock:app", ":RoboSpock:robospock"
+include ":RoboSpockEspresso", ":RoboSpockEspresso:app", ":RoboSpockEspresso:robospock"
