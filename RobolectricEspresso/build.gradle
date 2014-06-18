@@ -90,9 +90,3 @@ dependencies {
     compile 'com.android.support:support-v4:19.0.1'
 }
 
-apply plugin: 'idea'
-idea {
-    module {
-        testOutputDir = file('build/test-classes/debug')
-    }
-}
